@@ -2,12 +2,12 @@
 import UIKit
 
 extension UITableView {
-    public func performUpdate(from old: XCollectionData, to new: XCollectionData, rowAnimation: UITableView.RowAnimation = .fade) {
+    public func performUpdate(from old: XCollectionData, to new: XCollectionData, rowAnimation: UITableView.RowAnimation = .automatic) {
         let diff = new.diff(old)
         applySimplediff(diff, withRowAnimation: rowAnimation)
     }
     
-    public func applySimplediff(_ diff: Simplediff, withRowAnimation rowAnimation: UITableView.RowAnimation = .fade) {
+    public func applySimplediff(_ diff: Simplediff, withRowAnimation rowAnimation: UITableView.RowAnimation = .automatic) {
         let insertOrDeleteSections = diff.sectionPatches.filter { $0.type != .noop }
         let insertOrDeleteRows = diff.rowPatches.filter { $0.type != .noop }
         

@@ -10,7 +10,7 @@ open class XCollectionSection {
         return self.rows.count
     }
     
-    public var index: Int = Int.max {
+    internal(set) public var index: Int = Int.max {
         didSet {
             updateRowIndexPaths()
         }
