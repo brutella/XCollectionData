@@ -15,32 +15,32 @@ extension UITableView {
             return
         }
         
-        performBatchUpdates({
-            for op in insertOrDeleteSections {
-                let indices = op.elements.map { return $0.index }
-                let indexSet = IndexSet(indices)
-                switch op.type {
-                case .insert:
-                    self.insertSections(indexSet, with: rowAnimation)
-                case .delete:
-                    self.deleteSections(indexSet, with: rowAnimation)
-                default:
-                    break
-                }
+        beginUpdates()
+        for op in insertOrDeleteSections {
+            let indices = op.elements.map { return $0.index }
+            let indexSet = IndexSet(indices)
+            switch op.type {
+            case .insert:
+                self.insertSections(indexSet, with: rowAnimation)
+            case .delete:
+                self.deleteSections(indexSet, with: rowAnimation)
+            default:
+                break
             }
+        }
         
-            for op in insertOrDeleteRows {
-                let indexPaths = op.elements.map { return $0.indexPath }
-                switch op.type {
-                case .insert:
-                    self.insertRows(at: indexPaths, with: rowAnimation)
-                case .delete:
-                    self.deleteRows(at: indexPaths, with: rowAnimation)
-                default:
-                    break
-                }
+        for op in insertOrDeleteRows {
+            let indexPaths = op.elements.map { return $0.indexPath }
+            switch op.type {
+            case .insert:
+                self.insertRows(at: indexPaths, with: rowAnimation)
+            case .delete:
+                self.deleteRows(at: indexPaths, with: rowAnimation)
+            default:
+                break
             }
-        })
+        }
+        endUpdates()
     }
 }
 #endif
