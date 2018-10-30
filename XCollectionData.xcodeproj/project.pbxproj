@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"XCollectionData::XCollectionDataPackageTests::ProductTarget" /* XCollectionDataPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_49 /* Build configuration list for PBXAggregateTarget "XCollectionDataPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_52 /* PBXTargetDependency */,
+			);
+			name = XCollectionDataPackageTests;
+			productName = XCollectionDataPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_31 /* NSCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* NSCollectionView.swift */; };
+		OBJ_32 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* UICollectionView.swift */; };
+		OBJ_33 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* UITableView.swift */; };
+		OBJ_34 /* XCollectionData+simplediff.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XCollectionData+simplediff.swift */; };
+		OBJ_35 /* XCollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCollectionData.swift */; };
+		OBJ_36 /* XCollectionRow+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* XCollectionRow+Hashable.swift */; };
+		OBJ_37 /* XCollectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* XCollectionRow.swift */; };
+		OBJ_38 /* XCollectionSection+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* XCollectionSection+Hashable.swift */; };
+		OBJ_39 /* XCollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* XCollectionSection.swift */; };
+		OBJ_40 /* simplediff.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* simplediff.swift */; };
+		OBJ_47 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_58 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* XCTestManifests.swift */; };
+		OBJ_59 /* XCollectionDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* XCollectionDataTests.swift */; };
+		OBJ_61 /* XCollectionData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "XCollectionData::XCollectionData::Product" /* XCollectionData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10487DB9218863ED0041C43D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "XCollectionData::XCollectionData";
+			remoteInfo = XCollectionData;
+		};
+		10487DBA218863EE0041C43D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "XCollectionData::XCollectionDataTests";
+			remoteInfo = XCollectionDataTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		OBJ_10 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		OBJ_11 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		OBJ_12 /* XCollectionData+simplediff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCollectionData+simplediff.swift"; sourceTree = "<group>"; };
+		OBJ_13 /* XCollectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCollectionData.swift; sourceTree = "<group>"; };
+		OBJ_14 /* XCollectionRow+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCollectionRow+Hashable.swift"; sourceTree = "<group>"; };
+		OBJ_15 /* XCollectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCollectionRow.swift; sourceTree = "<group>"; };
+		OBJ_16 /* XCollectionSection+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCollectionSection+Hashable.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* XCollectionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCollectionSection.swift; sourceTree = "<group>"; };
+		OBJ_18 /* simplediff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simplediff.swift; sourceTree = "<group>"; };
+		OBJ_21 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_22 /* XCollectionDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCollectionDataTests.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* NSCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCollectionView.swift; sourceTree = "<group>"; };
+		"XCollectionData::XCollectionData::Product" /* XCollectionData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCollectionData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"XCollectionData::XCollectionDataTests::Product" /* XCollectionDataTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = XCollectionDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_61 /* XCollectionData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_19 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* XCollectionDataTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_20 /* XCollectionDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* XCTestManifests.swift */,
+				OBJ_22 /* XCollectionDataTests.swift */,
+			);
+			name = XCollectionDataTests;
+			path = Tests/XCollectionDataTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"XCollectionData::XCollectionDataTests::Product" /* XCollectionDataTests.xctest */,
+				"XCollectionData::XCollectionData::Product" /* XCollectionData.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_19 /* Tests */,
+				OBJ_23 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* XCollectionData */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* XCollectionData */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* NSCollectionView.swift */,
+				OBJ_10 /* UICollectionView.swift */,
+				OBJ_11 /* UITableView.swift */,
+				OBJ_12 /* XCollectionData+simplediff.swift */,
+				OBJ_13 /* XCollectionData.swift */,
+				OBJ_14 /* XCollectionRow+Hashable.swift */,
+				OBJ_15 /* XCollectionRow.swift */,
+				OBJ_16 /* XCollectionSection+Hashable.swift */,
+				OBJ_17 /* XCollectionSection.swift */,
+				OBJ_18 /* simplediff.swift */,
+			);
+			name = XCollectionData;
+			path = Sources/XCollectionData;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"XCollectionData::SwiftPMPackageDescription" /* XCollectionDataPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_43 /* Build configuration list for PBXNativeTarget "XCollectionDataPackageDescription" */;
+			buildPhases = (
+				OBJ_46 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCollectionDataPackageDescription;
+			productName = XCollectionDataPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"XCollectionData::XCollectionData" /* XCollectionData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_27 /* Build configuration list for PBXNativeTarget "XCollectionData" */;
+			buildPhases = (
+				OBJ_30 /* Sources */,
+				OBJ_41 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCollectionData;
+			productName = XCollectionData;
+			productReference = "XCollectionData::XCollectionData::Product" /* XCollectionData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"XCollectionData::XCollectionDataTests" /* XCollectionDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_54 /* Build configuration list for PBXNativeTarget "XCollectionDataTests" */;
+			buildPhases = (
+				OBJ_57 /* Sources */,
+				OBJ_60 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_62 /* PBXTargetDependency */,
+			);
+			name = XCollectionDataTests;
+			productName = XCollectionDataTests;
+			productReference = "XCollectionData::XCollectionDataTests::Product" /* XCollectionDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "XCollectionData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"XCollectionData::XCollectionData" /* XCollectionData */,
+				"XCollectionData::SwiftPMPackageDescription" /* XCollectionDataPackageDescription */,
+				"XCollectionData::XCollectionDataPackageTests::ProductTarget" /* XCollectionDataPackageTests */,
+				"XCollectionData::XCollectionDataTests" /* XCollectionDataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_31 /* NSCollectionView.swift in Sources */,
+				OBJ_32 /* UICollectionView.swift in Sources */,
+				OBJ_33 /* UITableView.swift in Sources */,
+				OBJ_34 /* XCollectionData+simplediff.swift in Sources */,
+				OBJ_35 /* XCollectionData.swift in Sources */,
+				OBJ_36 /* XCollectionRow+Hashable.swift in Sources */,
+				OBJ_37 /* XCollectionRow.swift in Sources */,
+				OBJ_38 /* XCollectionSection+Hashable.swift in Sources */,
+				OBJ_39 /* XCollectionSection.swift in Sources */,
+				OBJ_40 /* simplediff.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_47 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_58 /* XCTestManifests.swift in Sources */,
+				OBJ_59 /* XCollectionDataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "XCollectionData::XCollectionDataTests" /* XCollectionDataTests */;
+			targetProxy = 10487DBA218863EE0041C43D /* PBXContainerItemProxy */;
+		};
+		OBJ_62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "XCollectionData::XCollectionData" /* XCollectionData */;
+			targetProxy = 10487DB9218863ED0041C43D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = XCollectionData.xcodeproj/XCollectionData_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = XCollectionData;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = XCollectionData;
+			};
+			name = Debug;
+		};
+		OBJ_29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = XCollectionData.xcodeproj/XCollectionData_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = XCollectionData;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = XCollectionData;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				USE_HEADERMAP = NO;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				USE_HEADERMAP = NO;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = XCollectionData.xcodeproj/XCollectionDataTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = XCollectionDataTests;
+			};
+			name = Debug;
+		};
+		OBJ_56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = XCollectionData.xcodeproj/XCollectionDataTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = XCollectionDataTests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "XCollectionData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_27 /* Build configuration list for PBXNativeTarget "XCollectionData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_28 /* Debug */,
+				OBJ_29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_43 /* Build configuration list for PBXNativeTarget "XCollectionDataPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_44 /* Debug */,
+				OBJ_45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_49 /* Build configuration list for PBXAggregateTarget "XCollectionDataPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_50 /* Debug */,
+				OBJ_51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_54 /* Build configuration list for PBXNativeTarget "XCollectionDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_55 /* Debug */,
+				OBJ_56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
