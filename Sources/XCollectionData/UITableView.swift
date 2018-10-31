@@ -17,7 +17,7 @@ extension UITableView {
         
         beginUpdates()
         for op in insertOrDeleteSections {
-            let indices = op.elements.map { return $0.index }
+            let indices = op.elements.map({ $0.index }).compactMap({ $0 })
             let indexSet = IndexSet(indices)
             switch op.type {
             case .insert:
@@ -30,7 +30,7 @@ extension UITableView {
         }
         
         for op in insertOrDeleteRows {
-            let indexPaths = op.elements.map { return $0.indexPath }
+            let indexPaths = op.elements.map({ $0.indexPath }).compactMap({ $0 })
             switch op.type {
             case .insert:
                 self.insertRows(at: indexPaths, with: rowAnimation)

@@ -10,7 +10,7 @@ open class XCollectionSection {
         return self.rows.count
     }
     
-    internal(set) public var index: Int = Int.max {
+    internal(set) public var index: Int? {
         didSet {
             updateRowIndexPaths()
         }
@@ -59,8 +59,12 @@ open class XCollectionSection {
     // MARK: - Private
     
     private func updateRowIndexPaths() {
+        guard let section = self.index else {
+            return
+        }
+        
         for (index, row) in self.rows.enumerated() {
-            row.indexPath = IndexPath(indexes: [self.index, index])
+            row.indexPath = IndexPath(indexes: [section, index])
         }
     }
 }
