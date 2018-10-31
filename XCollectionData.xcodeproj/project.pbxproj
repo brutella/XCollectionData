@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		108D5E742189BAE4000C802F /* XTableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108D5E732189BAE4000C802F /* XTableSection.swift */; };
 		OBJ_31 /* NSCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* NSCollectionView.swift */; };
 		OBJ_32 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* UICollectionView.swift */; };
 		OBJ_33 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* UITableView.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		108D5E732189BAE4000C802F /* XTableSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTableSection.swift; sourceTree = "<group>"; };
 		OBJ_10 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		OBJ_11 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		OBJ_12 /* XCollectionData+simplediff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCollectionData+simplediff.swift"; sourceTree = "<group>"; };
@@ -118,7 +120,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -126,7 +128,6 @@
 				OBJ_19 /* Tests */,
 				OBJ_23 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -150,6 +151,7 @@
 				OBJ_16 /* XCollectionSection+Hashable.swift */,
 				OBJ_17 /* XCollectionSection.swift */,
 				OBJ_18 /* simplediff.swift */,
+				108D5E732189BAE4000C802F /* XTableSection.swift */,
 			);
 			name = XCollectionData;
 			path = Sources/XCollectionData;
@@ -220,7 +222,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -246,6 +248,7 @@
 				OBJ_36 /* XCollectionRow+Hashable.swift in Sources */,
 				OBJ_37 /* XCollectionRow.swift in Sources */,
 				OBJ_38 /* XCollectionSection+Hashable.swift in Sources */,
+				108D5E742189BAE4000C802F /* XTableSection.swift in Sources */,
 				OBJ_39 /* XCollectionSection.swift in Sources */,
 				OBJ_40 /* simplediff.swift in Sources */,
 			);

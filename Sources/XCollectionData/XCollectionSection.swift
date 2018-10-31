@@ -3,8 +3,6 @@ import Foundation
 /// Represents a section in a two-dimensional collection
 open class XCollectionSection {
     public let identifier: String
-    public let title: String?
-    public let footer: String?
     
     public var numberOfRows: Int {
         return self.rows.count
@@ -18,10 +16,8 @@ open class XCollectionSection {
     
     public var rows = [XCollectionRow]()
     
-    public init(identifier: String, title: String? = nil, footer: String? = nil) {
+    public init(identifier: String) {
         self.identifier = identifier
-        self.title = title
-        self.footer = footer
     }
     
     public func add(_ row: XCollectionRow) {
