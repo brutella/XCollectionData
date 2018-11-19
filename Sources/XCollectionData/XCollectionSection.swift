@@ -4,6 +4,10 @@ import Foundation
 open class XCollectionSection {
     public let identifier: String
     
+    public var debugDescription: String {
+        return identifier + "\n" + rows.map({ $0.identifier }).joined(separator: "\n\t")
+    }
+    
     public var numberOfRows: Int {
         return self.rows.count
     }

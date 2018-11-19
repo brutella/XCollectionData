@@ -3,7 +3,7 @@ import Foundation
 public enum PatchType {
     case insert, delete, noop
     
-    public var description: String {
+    public var debugDescription: String {
         get {
             switch self {
             case .insert: return "+"
@@ -20,10 +20,10 @@ public struct Patch<T> {
     public let elements: [T]
     
     public var elementsString: String {
-        return elements.map({ "\($0)" }).joined(separator: "")
+        return elements.map({ "\($0)" }).joined(separator: ", ")
     }
     
-    public var description: String {
+    public var debugDescription: String {
         get {
             switch type {
             case .insert:

@@ -4,6 +4,10 @@ import Foundation
 open class XCollectionData {
     public var sections = [XCollectionSection]()
     
+    public var debugDescription: String {
+        return sections.map({ $0.debugDescription }).joined(separator: "\n")
+    }
+    
     public var numberOfSections: Int {
         return self.sections.count
     }

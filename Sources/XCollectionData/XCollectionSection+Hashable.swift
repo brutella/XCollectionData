@@ -1,14 +1,6 @@
 import Foundation
 
-extension XCollectionSection: Hashable {
-    public var debugDescription: String {
-        return self.rows.reduce(self.identifier, {
-            description, row in
-            
-            return description + row.identifier
-        })
-    }
-    
+extension XCollectionSection: Hashable {   
     public var hashValue: Int {
         return identifier.hashValue
     }
