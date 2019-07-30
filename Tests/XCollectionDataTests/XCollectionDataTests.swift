@@ -30,6 +30,38 @@ final class XCollectionDataTests: XCTestCase {
         XCTAssertEqual(row2.identifier, "row2")
     }
     
+    func testInsertSection() {
+        let data = XCollectionData()
+        
+        let section1 = XCollectionSection(identifier:"section1")
+        section1.add(XCollectionRow(identifier:"row11"))
+        section1.add(XCollectionRow(identifier:"row12"))
+        data.add(section1)
+        
+        let section0 = XCollectionSection(identifier:"section0")
+        section0.add(XCollectionRow(identifier:"row01"))
+        data.insert(section0, at: 0)
+        
+        XCTAssertEqual(data.numberOfSections, 2)
+        XCTAssertEqual(data.numberOfRows, 3)
+        
+        let row1IndexPath =  IndexPath(indexes: [0, 0])
+        guard let row1 = data.row(at: row1IndexPath) else {
+            XCTFail("No row at (0,0)")
+            return
+        }
+        
+        XCTAssertEqual(row1.identifier, "row01")
+        
+        let row2IndexPath =  IndexPath(indexes: [1, 1])
+        guard let row2 = data.row(at: row2IndexPath) else {
+            XCTFail("No row at (0,1)")
+            return
+        }
+        
+        XCTAssertEqual(row2.identifier, "row12")
+    }
+    
     func testDataDiff() {
         let old = XCollectionData()
         let oldSection1 = XCollectionSection(identifier:"section1")

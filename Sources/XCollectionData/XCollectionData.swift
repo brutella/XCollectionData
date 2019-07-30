@@ -66,6 +66,11 @@ open class XCollectionData {
         return nil
     }
     
+    public func insert(_ section: XCollectionSection, at index: Int) {
+        section.index = index
+        self.sections.insert(section, at: index)
+    }
+    
     public func add(_ section: XCollectionSection) {
         section.index = sections.count
         self.sections.append(section)
