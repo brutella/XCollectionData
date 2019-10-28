@@ -83,7 +83,7 @@ open class XCollectionData {
     }
     
     @discardableResult
-    public func moveRow(at source: IndexPath, to destination: IndexPath) -> Bool {
+    open func moveRow(at source: IndexPath, to destination: IndexPath) -> Bool {
         guard source.count > 1 && destination.count > 1 else {
             return false
         }
