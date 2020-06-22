@@ -82,6 +82,22 @@ open class XCollectionData {
         }
     }
     
+    public func canMoveRow(at source: IndexPath, to destination: IndexPath) -> Bool {
+        guard source.count > 1 && destination.count > 1 else {
+            return false
+        }
+        
+        if source.section >= sections.count || destination.section >= sections.count {
+            return false
+        }
+        
+        if sections[source.section].numberOfRows >= source[1] || sections[destination.section].numberOfRows >= destination[1] {
+            return false
+        }
+        
+        return true
+    }
+    
     @discardableResult
     open func moveRow(at source: IndexPath, to destination: IndexPath) -> Bool {
         guard source.count > 1 && destination.count > 1 else {
