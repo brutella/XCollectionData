@@ -91,7 +91,7 @@ open class XCollectionData {
             return false
         }
         
-        if sections[source[0]].numberOfRows >= source[1] || sections[destination[0]].numberOfRows >= destination[1] {
+        if source[1] >= sections[source[0]].numberOfRows || destination[1] >= sections[destination[0]].numberOfRows {
             return false
         }
         
