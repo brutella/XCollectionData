@@ -1,0 +1,57 @@
+version: '3'
+
+# expansions: 3
+
+vars:
+    PWD:
+        sh: pwd
+    BUILD_DIR: "{{ .PWD }}/build"
+    XCODEPROJ: "XCollectionData.xcodeproj"
+    SCHEME: "XCData"
+    OUTPUT_DIR: "{{ .PWD }}/archive"
+    CONFIGURATION: "Release"
+    SWIFT_VERSION: "5.3"
+    BUILD_FOR_DISTRIBUTION: "YES"
+    SUPPORTS_MACCATALYST: "NO"
+
+tasks:
+    clean:
+        cmds:
+            - rm -rf "{{ .BUILD_DIR }}"
+    archive:
+        cmds:
+            - xcodebuild archive -project "{{ .XCODEPROJ }}" -scheme "{{ .SCHEME }}" -configuration "{{ .CONFIGURATION }}" -destination "{{ .DESTINATION }}" -archivePath '{{ .BUILD_DIR }}/{{ .SCHEME }}.framework-{{ .PLATFORM }}.xcarchive' SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION={{ .BUILD_FOR_DISTRIBUTION }} SWIFT_VERSION={{ .SWIFT_VERSION }} SUPPORTS_MACCATALYST={{ .SUPPORTS_MAC_CATALYST }}
+    archive_watch:
+        - task: archive
+          vars:
+            DESTINATION: "generic/platform=watchos"
+            PLATFORM: watchos
+        - task: archive
+          vars:
+            DESTINATION: "generic/platform=watchsimulator"
+            PLATFORM: watchsimulator
+    archive_phone:
+        - task: archive
+          vars:
+            DESTINATION: "generic/platform=iphoneos"
+            PLATFORM: iphoneos
+        - task: archive
+          vars:
+            DESTINATION: "generic/platform=iphonesimulator"
+            PLATFORM: iphonesimulator
+    archive_mac:
+        - task: archive
+          vars:
+            DESTINATION: "platform=macOS,arch=x86_64,variant=Mac Catalyst"
+            PLATFORM: catalyst
+            SUPPORTS_MAC_CATALYST: "YES"
+    xcframework:
+        - task: archive_watch
+        - task: archive_phone
+        # - task: archive_mac
+        - cmd: xcodebuild -create-xcframework 
+              -framework '{{ .BUILD_DIR }}/{{ .SCHEME }}.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/{{ .SCHEME }}.framework' 
+              -framework '{{ .BUILD_DIR }}/{{ .SCHEME }}.framework-watchsimulator.xcarchive/Products/Library/Frameworks/{{ .SCHEME }}.framework' 
+              -framework '{{ .BUILD_DIR }}/{{ .SCHEME }}.framework-iphoneos.xcarchive/Products/Library/Frameworks/{{ .SCHEME }}.framework' 
+              -framework '{{ .BUILD_DIR }}/{{ .SCHEME }}.framework-watchos.xcarchive/Products/Library/Frameworks/{{ .SCHEME }}.framework' 
+              -output '{{ .BUILD_DIR }}/{{ .SCHEME }}.xcframework'

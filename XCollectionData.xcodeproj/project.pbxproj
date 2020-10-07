@@ -35,7 +35,7 @@
 		OBJ_47 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_58 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* XCTestManifests.swift */; };
 		OBJ_59 /* XCollectionDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* XCollectionDataTests.swift */; };
-		OBJ_61 /* XCollectionData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "XCollectionData::XCollectionData::Product" /* XCollectionData.framework */; };
+		OBJ_61 /* XCData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "XCollectionData::XCollectionData::Product" /* XCData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +70,7 @@
 		OBJ_22 /* XCollectionDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCollectionDataTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* NSCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCollectionView.swift; sourceTree = "<group>"; };
-		"XCollectionData::XCollectionData::Product" /* XCollectionData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCollectionData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"XCollectionData::XCollectionData::Product" /* XCData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XCData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"XCollectionData::XCollectionDataTests::Product" /* XCollectionDataTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = XCollectionDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_61 /* XCollectionData.framework in Frameworks */,
+				OBJ_61 /* XCData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				"XCollectionData::XCollectionDataTests::Product" /* XCollectionDataTests.xctest */,
-				"XCollectionData::XCollectionData::Product" /* XCollectionData.framework */,
+				"XCollectionData::XCollectionData::Product" /* XCData.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -187,7 +187,7 @@
 			);
 			name = XCollectionData;
 			productName = XCollectionData;
-			productReference = "XCollectionData::XCollectionData::Product" /* XCollectionData.framework */;
+			productReference = "XCollectionData::XCollectionData::Product" /* XCData.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		"XCollectionData::XCollectionDataTests" /* XCollectionDataTests */ = {
@@ -220,6 +220,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = OBJ_5;
@@ -290,6 +291,7 @@
 		OBJ_28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,8 +304,8 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = XCollectionData;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = XCData;
+				PRODUCT_NAME = XCData;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 4.2;
@@ -314,6 +316,7 @@
 		OBJ_29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -326,8 +329,8 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = XCollectionData;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = XCData;
+				PRODUCT_NAME = XCData;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 4.2;
