@@ -39,16 +39,9 @@ tasks:
           vars:
             DESTINATION: "generic/platform=iphonesimulator"
             PLATFORM: iphonesimulator
-    archive_mac:
-        - task: archive
-          vars:
-            DESTINATION: "platform=macOS,arch=x86_64,variant=Mac Catalyst"
-            PLATFORM: catalyst
-            SUPPORTS_MAC_CATALYST: "YES"
     xcframework:
         - task: archive_watch
         - task: archive_phone
-        # - task: archive_mac
         - cmd: xcodebuild -create-xcframework 
               -framework '{{ .BUILD_DIR }}/{{ .SCHEME }}.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/{{ .SCHEME }}.framework' 
               -framework '{{ .BUILD_DIR }}/{{ .SCHEME }}.framework-watchsimulator.xcarchive/Products/Library/Frameworks/{{ .SCHEME }}.framework' 
